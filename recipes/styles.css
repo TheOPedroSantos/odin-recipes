@@ -1,41 +1,54 @@
 /* Lasagna page CSS */
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.grid {
-    width: 50%;
-    float: left;
-    background-color: wheat;
-}
-
-
-/* * {
+* {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.centered {
+.page-header {
     text-align: center;
+    color: darkred;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: lightgrey;
 }
 
-.ordered-list {
-    padding-left: 0;    
-}
-
-h1 {
-    font-size: 60px;
+.title {
+    font-size: 50px;
     font-weight: bolder;
 }
 
-h2 {
-    font-size: 30px;
+.subtitle {
+    font-size: 20px;
     font-weight: bold;
 }
 
 img {
-    width: 800px;
+    width: 600px;
     height: auto;
-} */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+
+.column-left {
+    background-color: wheat;
+    padding: 30px;
+    text-align: left;
+}
+
+.column-mid {
+    background-color: wheat;
+    padding: 30px;
+    padding-top: 100px;
+    text-align: left;
+}
+
+.column-right {
+    background-color: wheat;
+    padding: 30px;
+    padding-top: 100px;
+    text-align: left;
+}
